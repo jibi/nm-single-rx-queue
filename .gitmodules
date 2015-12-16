@@ -1,4 +1,3 @@
 [submodule "deps/netmap"]
 	path = deps/netmap
-	url = https://github.com/jibi/netmap
-	branch = single-rx-queue-mode
+	url = https://github.com/luigirizzo/netmap
