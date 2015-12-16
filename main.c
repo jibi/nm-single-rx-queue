@@ -96,7 +96,7 @@ main(int argc, char *argv[])
 	interface = argv[1];
 	ring_id   = atoi(argv[2]);
 
-	snprintf(netmap_ifname, sizeof(netmap_ifname), "netmap:%s~%d", interface, ring_id);
+	snprintf(netmap_ifname, sizeof(netmap_ifname), "netmap:%s-%d/R", interface, ring_id);
 	d = nm_open(netmap_ifname, NULL, 0, 0);
 
 	if (!d) {
